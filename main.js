@@ -10,3 +10,15 @@ console.log('age');
 // General Ticket price
 var tPrice = kilometers * 0.21;
 console.log('tPrice');
+
+//Prices with and without Discounts
+
+if ( age < 18 ){
+    tPrice = tPrice * 0.20;
+    document.getElementById ('info').innerHTML = 'The price of your ticket is :';
+}else if ( age > 65 ){
+    tPrice= tPrice * 0.40;
+    document.getElementById ('info').innerHTML = 'The price of your ticket is :';
+}else{
+    document.getElementById ('info').innerHTML = tPrice;
+}
