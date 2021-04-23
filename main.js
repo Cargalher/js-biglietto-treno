@@ -17,12 +17,12 @@ var tPrice = kilometers * 0.21;
 if ( age < 18 ){
     tPrice = tPrice * 0.20;
     var rounded_price = tPrice.toFixed(2);
-    document.getElementById('info').innerHTML = 'The price of your ticket is ' + ': ' + rounded_price;
+    document.getElementById('info').innerHTML = 'The price of your ticket is ' + ': ' + rounded_price + ' €';
 }else if ( age > 65 ){
     tPrice= tPrice * 0.40;
     var rounded_price = tPrice.toFixed(2);
-    document.getElementById('info').innerHTML = 'The price of your ticket is ' + ': ' + rounded_price;
+    document.getElementById('info').innerHTML = 'The price of your ticket is ' + ': ' + rounded_price + ' €';
 }else{
     var rounded_price = tPrice.toFixed(2);
-    document.getElementById('info').innerHTML = 'The price of your ticket is ' + ': ' + rounded_price;
+    document.getElementById('info').innerHTML = 'The price of your ticket is ' + ': ' + rounded_price + ' €';
  }
