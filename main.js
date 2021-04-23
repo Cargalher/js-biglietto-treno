@@ -16,10 +16,13 @@ var tPrice = kilometers * 0.21;
 
 if ( age < 18 ){
     tPrice = tPrice * 0.20;
-    document.getElementById('info').innerHTML = 'The price of your ticket is ' + ': ' + tPrice;
+    var rounded_price = tPrice.toFixed(2);
+    document.getElementById('info').innerHTML = 'The price of your ticket is ' + ': ' + rounded_price;
 }else if ( age > 65 ){
     tPrice= tPrice * 0.40;
-    document.getElementById('info').innerHTML = 'The price of your ticket is ' + ': ' + tPrice;
+    var rounded_price = tPrice.toFixed(2);
+    document.getElementById('info').innerHTML = 'The price of your ticket is ' + ': ' + rounded_price;
 }else{
-    document.getElementById('info').innerHTML = 'The price of your ticket is ' + ': ' + tPrice;
+    var rounded_price = tPrice.toFixed(2);
+    document.getElementById('info').innerHTML = 'The price of your ticket is ' + ': ' + rounded_price;
  }
